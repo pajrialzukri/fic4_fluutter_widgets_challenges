@@ -19,12 +19,16 @@ class _HomePageState extends State<HomePage> {
 
   void _submitForm() {
     if (_nameController.text.isNotEmpty) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => MenuPage(name: _nameController.text),
-        ),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) => MenuPage(name: _nameController.text),
+      //   ),
+      // );
+      Navigator.pushNamed(context, '/menu', arguments: {
+        'name': _nameController.text,
+        'age': '20',
+      });
     }
   }
 

@@ -15,13 +15,14 @@ class _FICSliverWidgetState extends State<FICSliverWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: const Text("FIC - Sliver"),
         actions: const [],
       ),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            pinned: pinned,
+            automaticallyImplyLeading: false,
             snap: snap,
             floating: floating,
             expandedHeight: 160,

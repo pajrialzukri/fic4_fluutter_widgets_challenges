@@ -137,7 +137,7 @@ List<dynamic> routesNavigation = [
 
 final Map<String, WidgetBuilder> routes = {
   '/': (context) => const HomePage(),
-  '/menu': (context) => MenuPage(name: ''),
+  '/menu': (context) => const MenuPage(),
   //basic widget
   '/button': (context) => const FICButtonWidget(),
   '/icon': (context) => const FICIconWidget(),
